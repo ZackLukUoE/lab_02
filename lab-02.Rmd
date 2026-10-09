@@ -89,7 +89,7 @@ coastal_countries |> group_by(region) |> count()
 
 ```{r Ex2, message = FALSE}
 # Write your code here to answer exercise 2
-
+plastic_data_all %>% mutate(total_mismanage_plastic = mismanaged_plastic*population)
 
 
 ```
