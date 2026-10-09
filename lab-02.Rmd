@@ -79,9 +79,8 @@ plastic_data_all %>% head(n = 10)
 
 ```{r Ex1, message = FALSE}
 # Write your code here to answer exercise 1
-
-
-
+coastal_countries <- left_join(data2, data4, by = c("code", "name"))
+coastal_countries |> group_by(region) |> count()
 ```
 
 
